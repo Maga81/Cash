@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="Toggle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" stylesheets="/style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mojprogram.elkosz.controllers.ToggleButtonsController">
+   <children>
+      <ToggleButton fx:id="addNewCompany" mnemonicParsing="false" onAction="#addCompany" text="Nowa Firma">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle" />
+         </toggleGroup>
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-New%20Company-30.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <HBox.margin>
+            <Insets left="70.0" />
+         </HBox.margin>
+      </ToggleButton>
+      <ToggleButton fx:id="addNewCash" mnemonicParsing="false" onAction="#addCash" text="Nowa Kasa Fiskalna" toggleGroup="$toggle">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-Kasa%20fiskalna_32.png" />
+               </image>
+            </ImageView>
+         </graphic></ToggleButton>
+      <ToggleButton fx:id="showTheListofcash" mnemonicParsing="false" onAction="#showcash" text="Lista Kas Fiskalnych" toggleGroup="$toggle" />
+      <ToggleButton fx:id="showListofComany" mnemonicParsing="false" onAction="#CompanyList" text="Lista Firm" toggleGroup="$toggle" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</HBox>

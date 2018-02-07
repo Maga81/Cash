@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="/style/style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mojprogram.elkosz.controllers.CompanyListController">
+   <children>
+      <TableView fx:id="CompanyTableView" prefHeight="600.0" prefWidth="1150.0">
+        <columns>
+          <TableColumn fx:id="companycolumn" prefWidth="219.0" text="Nazwa Firmy" />
+          <TableColumn fx:id="taxIdcolumn" prefWidth="134.0" text="NIP" />
+            <TableColumn fx:id="citycolumn" minWidth="8.0" prefWidth="155.0" text="Miejscowość" />
+            <TableColumn fx:id="streetcolum" prefWidth="141.0" text="Ulica" />
+            <TableColumn fx:id="contactcolumn" minWidth="9.0" prefWidth="195.0" text="    Osoba Kontaktowa" />
+            <TableColumn fx:id="phonecolumn" prefWidth="114.0" resizable="false" text="Telefon" />
+            <TableColumn fx:id="delcompany" prefWidth="102.0" text="Usuń" />
+            <TableColumn fx:id="editionColumn" prefWidth="89.0" text="Edycja" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>

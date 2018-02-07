@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mojprogram.elkosz.controllers.MainController" stylesheets="/style/style.css">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <MenuBar>
+           <menus>
+             <Menu mnemonicParsing="false" text="Plik">
+               <items>
+                 <MenuItem mnemonicParsing="false" onAction="#CloseApp" text="Zakończ" />
+               </items>
+             </Menu>
+             <Menu mnemonicParsing="false" text="Ustawienia">
+               <items>
+                 <MenuItem mnemonicParsing="false" onAction="#Settings" text="Preferencje" />
+               </items>
+             </Menu>
+             <Menu mnemonicParsing="false" text="O Aplikacji">
+               <items>
+                 <MenuItem mnemonicParsing="false" onAction="#About" text="Pomoc" />
+               </items>
+             </Menu>
+           </menus>
+         </MenuBar>
+      <fx:include fx:id="togglebuttons" source="ToggleButtons.fxml" />
+      </VBox>
+   </top>
+</BorderPane>
